@@ -1,0 +1,8 @@
+.ipynb_*
+_pycache__
+.pytest_cache
+.pytest_cache
+.ipynb_checkpoints
+lora
+experiments
+results

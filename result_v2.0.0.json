@@ -1,0 +1,3581 @@
+{
+    "taskId": "2025.09.22-14.08.47",
+    "wallHeight": 270,
+    "centerPos": "X=1337.772 Y=1003.329 Z=0.000",
+    "totalArea": "130.84",
+    "windowList": [
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 89,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1801.533 Y=1692.281 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Ground_Window",
+            "heightToFloor": 10,
+            "length": 229,
+            "width": 24,
+            "height": 230,
+            "pos": "X=955.392 Y=1694.511 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Ground_Window",
+            "heightToFloor": 10,
+            "length": 231,
+            "width": 24,
+            "height": 230,
+            "pos": "X=1371.216 Y=1692.281 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 86,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1053.495 Y=258.636 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 57,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1471.549 Y=189.518 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 196,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1759.170 Y=512.813 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 73,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1255.276 Y=197.321 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 89,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1346.690 Y=156.073 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        }
+    ],
+    "doorList": [
+        {
+            "heightToFloor": 0,
+            "length": 84,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1078.147 Y=766.970 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 84,
+            "width": 50,
+            "height": 220,
+            "pos": "X=947.631 Y=1154.126 Z=0.000",
+            "direction": "X=-1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 84,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1463.719 Y=1219.600 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1258.626 Y=1377.902 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 84,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1170.579 Y=1147.432 Z=0.000",
+            "direction": "X=-1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 84,
+            "width": 50,
+            "height": 210,
+            "pos": "X=974.324 Y=632.156 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 155,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1778.122 Y=1192.847 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 155,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1751.366 Y=1571.882 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 150,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1253.046 Y=405.791 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 255,
+            "width": 50,
+            "height": 220,
+            "pos": "X=943.129 Y=1574.111 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        }
+    ],
+    "roomList": [
+        {
+            "name": "阳台",
+            "englishName": "Balcony",
+            "points": [
+                "X=1625.393 Y=1600.867 Z=0.000",
+                "X=1946.458 Y=1600.867 Z=0.000",
+                "X=1946.458 Y=1687.822 Z=0.000",
+                "X=1625.393 Y=1687.822 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 89,
+                    "width": 22.2960205078125,
+                    "height": 150,
+                    "pos": "X=1801.533 Y=1687.822 Z=90.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 155,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1751.366 Y=1600.867 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1946.5,
+                                "y": 1687.8
+                            },
+                            "min": {
+                                "x": 1886.5,
+                                "y": 1600.9
+                            }
+                        },
+                        "iD": "27224",
+                        "location": {
+                            "x": 1916.5,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.7000000000000001,
+                            "y": 1.0
+                        },
+                        "type": "BalconyCabinets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1946.5,
+                                "y": 1687.8
+                            },
+                            "min": {
+                                "x": 1886.5,
+                                "y": 1600.9
+                            }
+                        },
+                        "iD": "27224",
+                        "location": {
+                            "x": 1916.5,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.7000000000000001,
+                            "y": 1.0
+                        },
+                        "type": "BalconyCabinets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1785.9,
+                                "y": 1649.3
+                            },
+                            "min": {
+                                "x": 1775.9,
+                                "y": 1639.3
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1780.9,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1861.5,
+                                "y": 1649.3
+                            },
+                            "min": {
+                                "x": 1851.5,
+                                "y": 1639.3
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1856.5,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1660.4,
+                                "y": 1649.3
+                            },
+                            "min": {
+                                "x": 1650.4,
+                                "y": 1639.3
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1655.4,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1785.9,
+                                "y": 1649.3
+                            },
+                            "min": {
+                                "x": 1775.9,
+                                "y": 1639.3
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1780.9,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1861.5,
+                                "y": 1649.3
+                            },
+                            "min": {
+                                "x": 1851.5,
+                                "y": 1639.3
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1856.5,
+                            "y": 1644.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1660.4,
+                                "y": 1692.9
+                            },
+                            "min": {
+                                "x": 1650.4,
+                                "y": 1682.9
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 1655.4,
+                            "y": 1687.9
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    }
+                ],
+            "views": [],
+            "area": 2.7899999618530273
+        },
+        {
+            "name": "阳台2",
+            "englishName": "Balcony2",
+            "points": [
+                "X=729.086 Y=1600.867 Z=0.000",
+                "X=1168.321 Y=1600.867 Z=0.000",
+                "X=1168.321 Y=1690.052 Z=0.000",
+                "X=729.086 Y=1690.052 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 10,
+                    "length": 229,
+                    "width": 22.2960205078125,
+                    "height": 230,
+                    "pos": "X=955.392 Y=1690.052 Z=10.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 255,
+                    "width": 33.4439697265625,
+                    "height": 220,
+                    "pos": "X=943.129 Y=1600.867 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 764.1,
+                                "y": 1690.1
+                            },
+                            "min": {
+                                "x": 729.1,
+                                "y": 1570.1
+                            }
+                        },
+                        "iD": "25824",
+                        "location": {
+                            "x": 746.6,
+                            "y": 1630.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DecorativeCabinets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1653.2
+                            },
+                            "min": {
+                                "x": 1126.4,
+                                "y": 1601.9
+                            }
+                        },
+                        "iD": "22320",
+                        "location": {
+                            "x": 1147.4,
+                            "y": 1627.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "PetFrame"
+                    }
+                ],
+            "views": [],
+            "area": 3.9200000762939453
+        },
+        {
+            "name": "次卧",
+            "englishName": "SecondBedroom",
+            "points": [
+                "X=1591.948 Y=1380.135 Z=0.000",
+                "X=1591.948 Y=1687.822 Z=0.000",
+                "X=1199.535 Y=1687.822 Z=0.000",
+                "X=1199.535 Y=1380.135 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 10,
+                    "length": 231,
+                    "width": 22.2960205078125,
+                    "height": 230,
+                    "pos": "X=1371.216 Y=1687.822 Z=10.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1258.626 Y=1380.135 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1415.5,
+                                "y": 1687.8
+                            },
+                            "min": {
+                                "x": 1205.5,
+                                "y": 1487.8
+                            }
+                        },
+                        "iD": "17760",
+                        "location": {
+                            "x": 1310.5,
+                            "y": 1587.8
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DoubleBed"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1469.5,
+                                "y": 1687.8
+                            },
+                            "min": {
+                                "x": 1416.5,
+                                "y": 1642.8
+                            }
+                        },
+                        "iD": "13397",
+                        "location": {
+                            "x": 1443.0,
+                            "y": 1665.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "BedsideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1205.5,
+                                "y": 1687.8
+                            },
+                            "min": {
+                                "x": 1199.5,
+                                "y": 1440.1
+                            }
+                        },
+                        "iD": "20718",
+                        "location": {
+                            "x": 1199.5,
+                            "y": 1564.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "BackWall0"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1203.4,
+                                "y": 1637.8
+                            },
+                            "min": {
+                                "x": 1199.5,
+                                "y": 1537.8
+                            }
+                        },
+                        "iD": "5329",
+                        "location": {
+                            "x": 1199.5,
+                            "y": 1587.8
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "TV"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1471.0,
+                                "y": 1440.1
+                            },
+                            "min": {
+                                "x": 1199.5,
+                                "y": 1380.1
+                            }
+                        },
+                        "iD": "15673",
+                        "location": {
+                            "x": 1335.3,
+                            "y": 1410.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.2,
+                            "y": 1.0
+                        },
+                        "type": "Armoire"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1408.3,
+                                "y": 1574.5
+                            },
+                            "min": {
+                                "x": 1347.7,
+                                "y": 1513.9
+                            }
+                        },
+                        "iD": "17682",
+                        "location": {
+                            "x": 1378.0,
+                            "y": 1544.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CeilingLight"
+                    }
+                ],
+            "views": [],
+            "area": 12.069999694824219
+        },
+        {
+            "name": "次卧2",
+            "englishName": "SecondBedroom2",
+            "points": [
+                "X=1946.458 Y=1224.061 Z=0.000",
+                "X=1946.458 Y=1565.193 Z=0.000",
+                "X=1625.393 Y=1565.193 Z=0.000",
+                "X=1625.393 Y=1224.061 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 155,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1751.366 Y=1565.193 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 155,
+                    "width": 37.903076171875,
+                    "height": 220,
+                    "pos": "X=1778.122 Y=1224.061 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1840.9,
+                                "y": 1494.6
+                            },
+                            "min": {
+                                "x": 1630.9,
+                                "y": 1344.6
+                            }
+                        },
+                        "iD": "13633",
+                        "location": {
+                            "x": 1735.9,
+                            "y": 1419.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "DoubleBed"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1675.9,
+                                "y": 1543.7
+                            },
+                            "min": {
+                                "x": 1630.9,
+                                "y": 1495.6
+                            }
+                        },
+                        "iD": "20354",
+                        "location": {
+                            "x": 1653.4,
+                            "y": 1519.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "BedsideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1675.9,
+                                "y": 1343.6
+                            },
+                            "min": {
+                                "x": 1630.9,
+                                "y": 1295.6
+                            }
+                        },
+                        "iD": "20354",
+                        "location": {
+                            "x": 1653.4,
+                            "y": 1319.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "BedsideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1946.5,
+                                "y": 1565.2
+                            },
+                            "min": {
+                                "x": 1846.5,
+                                "y": 1545.2
+                            }
+                        },
+                        "iD": "27074",
+                        "location": {
+                            "x": 1896.5,
+                            "y": 1555.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1725.4,
+                                "y": 1565.2
+                            },
+                            "min": {
+                                "x": 1625.4,
+                                "y": 1545.2
+                            }
+                        },
+                        "iD": "27074",
+                        "location": {
+                            "x": 1675.4,
+                            "y": 1555.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1630.9,
+                                "y": 1545.2
+                            },
+                            "min": {
+                                "x": 1625.4,
+                                "y": 1280.1
+                            }
+                        },
+                        "iD": "27345",
+                        "location": {
+                            "x": 1625.4,
+                            "y": 1412.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "BackWall0"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1946.5,
+                                "y": 1475.6
+                            },
+                            "min": {
+                                "x": 1942.7,
+                                "y": 1363.6
+                            }
+                        },
+                        "iD": "5329",
+                        "location": {
+                            "x": 1946.5,
+                            "y": 1419.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "TV"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1818.5,
+                                "y": 1442.6
+                            },
+                            "min": {
+                                "x": 1758.5,
+                                "y": 1382.6
+                            }
+                        },
+                        "iD": "27343",
+                        "location": {
+                            "x": 1788.5,
+                            "y": 1412.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "MainLight"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1846.5,
+                                "y": 1280.1
+                            },
+                            "min": {
+                                "x": 1625.4,
+                                "y": 1224.1
+                            }
+                        },
+                        "iD": "27344",
+                        "location": {
+                            "x": 1735.9,
+                            "y": 1252.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.1,
+                            "y": 1.0
+                        },
+                        "type": "Armoire"
+                    }
+                ],
+            "views": [],
+            "area": 10.949999809265137
+        },
+        {
+            "name": "储物间",
+            "englishName": "储物间",
+            "points": [
+                "X=1397.972 Y=1221.832 Z=0.000",
+                "X=1589.719 Y=1221.832 Z=0.000",
+                "X=1589.719 Y=1346.690 Z=0.000",
+                "X=1397.972 Y=1346.690 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1458.0,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1398.0,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1428.0,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1589.7,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1529.7,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1559.7,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1589.7,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1529.7,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1559.7,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1458.0,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1398.0,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1428.0,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1589.7,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1529.7,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1559.7,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1458.0,
+                                "y": 1346.7
+                            },
+                            "min": {
+                                "x": 1398.0,
+                                "y": 1221.8
+                            }
+                        },
+                        "iD": "25738",
+                        "location": {
+                            "x": 1428.0,
+                            "y": 1284.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "RootCabinet"
+                    }
+                ],
+            "views": [],
+            "area": 2.390000104904175
+        },
+        {
+            "name": "主卧",
+            "englishName": "MasterBedroom",
+            "points": [
+                "X=1168.321 Y=1070.217 Z=0.000",
+                "X=1168.321 Y=1567.423 Z=0.000",
+                "X=731.315 Y=1567.423 Z=0.000",
+                "X=731.315 Y=1237.439 Z=0.000",
+                "X=976.573 Y=1237.439 Z=0.000",
+                "X=976.573 Y=1070.217 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1168.321 Y=1147.432 Z=0.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 255,
+                    "width": 33.4439697265625,
+                    "height": 220,
+                    "pos": "X=943.129 Y=1567.423 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 31.2139892578125,
+                    "height": 220,
+                    "pos": "X=976.573 Y=1154.126 Z=0.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 945.3,
+                                "y": 1487.4
+                            },
+                            "min": {
+                                "x": 735.3,
+                                "y": 1287.4
+                            }
+                        },
+                        "iD": "27203",
+                        "location": {
+                            "x": 840.3,
+                            "y": 1387.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DoubleBed"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 780.3,
+                                "y": 1543.4
+                            },
+                            "min": {
+                                "x": 735.3,
+                                "y": 1488.4
+                            }
+                        },
+                        "iD": "27204",
+                        "location": {
+                            "x": 757.8,
+                            "y": 1515.9
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "BedsideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 780.3,
+                                "y": 1286.4
+                            },
+                            "min": {
+                                "x": 735.3,
+                                "y": 1231.4
+                            }
+                        },
+                        "iD": "27204",
+                        "location": {
+                            "x": 757.8,
+                            "y": 1258.9
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "BedsideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1567.4
+                            },
+                            "min": {
+                                "x": 1068.3,
+                                "y": 1547.4
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 1118.3,
+                            "y": 1557.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 831.3,
+                                "y": 1567.4
+                            },
+                            "min": {
+                                "x": 731.3,
+                                "y": 1547.4
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 781.3,
+                            "y": 1557.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 735.3,
+                                "y": 1547.4
+                            },
+                            "min": {
+                                "x": 731.3,
+                                "y": 1237.4
+                            }
+                        },
+                        "iD": "27202",
+                        "location": {
+                            "x": 731.3,
+                            "y": 1392.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "BackWall0"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 743.2,
+                                "y": 1273.9
+                            },
+                            "min": {
+                                "x": 735.3,
+                                "y": 1263.9
+                            }
+                        },
+                        "iD": "22309",
+                        "location": {
+                            "x": 735.3,
+                            "y": 1268.9
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "WallLamp"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 743.2,
+                                "y": 1510.9
+                            },
+                            "min": {
+                                "x": 735.3,
+                                "y": 1500.9
+                            }
+                        },
+                        "iD": "22309",
+                        "location": {
+                            "x": 735.3,
+                            "y": 1505.9
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "WallLamp"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 985.3,
+                                "y": 1507.4
+                            },
+                            "min": {
+                                "x": 845.3,
+                                "y": 1267.4
+                            }
+                        },
+                        "iD": "21827",
+                        "location": {
+                            "x": 915.3,
+                            "y": 1387.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.5,
+                            "y": 1.2
+                        },
+                        "type": "Rug"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1443.4
+                            },
+                            "min": {
+                                "x": 1164.5,
+                                "y": 1331.4
+                            }
+                        },
+                        "iD": "5329",
+                        "location": {
+                            "x": 1168.3,
+                            "y": 1387.4
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "TV"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 976.6,
+                                "y": 1135.2
+                            },
+                            "min": {
+                                "x": 812.6,
+                                "y": 1070.2
+                            }
+                        },
+                        "iD": "27210",
+                        "location": {
+                            "x": 894.6,
+                            "y": 1102.7
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.5,
+                            "y": 1.0
+                        },
+                        "type": "Armoire"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 974.6,
+                                "y": 1237.4
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 1135.2
+                            }
+                        },
+                        "iD": "27210",
+                        "location": {
+                            "x": 976.6,
+                            "y": 1186.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.30000000000000004,
+                            "y": 1.0
+                        },
+                        "type": "Armoire"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 974.9,
+                                "y": 1237.4
+                            },
+                            "min": {
+                                "x": 976.9,
+                                "y": 1135.2
+                            }
+                        },
+                        "iD": "27210",
+                        "location": {
+                            "x": 976.6,
+                            "y": 1186.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.30000000000000004,
+                            "y": 1.0
+                        },
+                        "type": "Armoire"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 965.3,
+                                "y": 1400.0
+                            },
+                            "min": {
+                                "x": 942.3,
+                                "y": 1377.0
+                            }
+                        },
+                        "iD": "25046",
+                        "location": {
+                            "x": 953.8,
+                            "y": 1388.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "MainLight"
+                    }
+                ],
+            "views": [],
+            "area": 17.6299991607666
+        },
+        {
+            "name": "卫生间",
+            "englishName": "Bathroom",
+            "points": [
+                "X=729.086 Y=931.981 Z=0.000",
+                "X=945.359 Y=931.981 Z=0.000",
+                "X=945.359 Y=1208.454 Z=0.000",
+                "X=729.086 Y=1208.454 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 31.2139892578125,
+                    "height": 220,
+                    "pos": "X=945.359 Y=1154.126 Z=0.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 945.4,
+                                "y": 1208.5
+                            },
+                            "min": {
+                                "x": 865.4,
+                                "y": 1128.5
+                            }
+                        },
+                        "iD": "8456",
+                        "location": {
+                            "x": 905.4,
+                            "y": 1168.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.9,
+                            "y": 0.9
+                        },
+                        "type": "ShowerRooms"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 945.4,
+                                "y": 1081.5
+                            },
+                            "min": {
+                                "x": 877.4,
+                                "y": 1045.5
+                            }
+                        },
+                        "iD": "11994",
+                        "location": {
+                            "x": 911.4,
+                            "y": 1063.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Toilets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 945.4,
+                                "y": 1188.4
+                            },
+                            "min": {
+                                "x": 891.5,
+                                "y": 1148.5
+                            }
+                        },
+                        "iD": "11943",
+                        "location": {
+                            "x": 945.4,
+                            "y": 1168.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Sprinkler"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 832.0,
+                                "y": 1211.0
+                            },
+                            "min": {
+                                "x": 798.0,
+                                "y": 1177.0
+                            }
+                        },
+                        "iD": "7632",
+                        "location": {
+                            "x": 815.0,
+                            "y": 1194.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "type": "CeilingLight"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 910.4,
+                                "y": 1173.5
+                            },
+                            "min": {
+                                "x": 900.4,
+                                "y": 1163.5
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 905.4,
+                            "y": 1168.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 772.1,
+                                "y": 1188.5
+                            },
+                            "min": {
+                                "x": 762.1,
+                                "y": 1178.5
+                            }
+                        },
+                        "iD": "4506",
+                        "location": {
+                            "x": 767.1,
+                            "y": 1183.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "DownLightd"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 807.1,
+                                "y": 1208.5
+                            },
+                            "min": {
+                                "x": 727.1,
+                                "y": 1206.5
+                            }
+                        },
+                        "iD": "16272",
+                        "location": {
+                            "x": 767.1,
+                            "y": 1208.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "BathMirror"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 829.1,
+                                "y": 1208.5
+                            },
+                            "min": {
+                                "x": 705.1,
+                                "y": 1148.5
+                            }
+                        },
+                        "iD": "16270",
+                        "location": {
+                            "x": 767.1,
+                            "y": 1208.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.4,
+                            "y": 1.0
+                        },
+                        "type": "WashbasinCabinetsD"
+                    }
+                ],
+            "views": [],
+            "area": 5.980000019073486
+        },
+        {
+            "name": "卫生间2",
+            "englishName": "Bathroom2",
+            "points": [
+                "X=976.573 Y=769.219 Z=0.000",
+                "X=1168.321 Y=769.219 Z=0.000",
+                "X=1168.321 Y=1039.003 Z=0.000",
+                "X=976.573 Y=1039.003 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 31.2149658203125,
+                    "height": 220,
+                    "pos": "X=1078.147 Y=769.219 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1011.5
+                            },
+                            "min": {
+                                "x": 991.6,
+                                "y": 956.5
+                            }
+                        },
+                        "iD": "8455",
+                        "location": {
+                            "x": 1079.9,
+                            "y": 984.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 0.9
+                        },
+                        "type": "ShowerRooms"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 902.0
+                            },
+                            "min": {
+                                "x": 1100.3,
+                                "y": 866.0
+                            }
+                        },
+                        "iD": "11927",
+                        "location": {
+                            "x": 1134.3,
+                            "y": 884.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Toilets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1039.0
+                            },
+                            "min": {
+                                "x": 1088.3,
+                                "y": 1011.5
+                            }
+                        },
+                        "iD": "11933",
+                        "location": {
+                            "x": 1128.3,
+                            "y": 1025.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.9,
+                            "y": 1.0
+                        },
+                        "type": "NshowerRooms"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.0,
+                                "y": 892.0
+                            },
+                            "min": {
+                                "x": 1046.0,
+                                "y": 862.0
+                            }
+                        },
+                        "iD": "7632",
+                        "location": {
+                            "x": 1061.0,
+                            "y": 877.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "type": "CeilingLight"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 1011.5
+                            },
+                            "min": {
+                                "x": 1158.2,
+                                "y": 956.5
+                            }
+                        },
+                        "iD": "17314",
+                        "location": {
+                            "x": 1168.3,
+                            "y": 984.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "BathMirror"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1168.3,
+                                "y": 844.0
+                            },
+                            "min": {
+                                "x": 1088.3,
+                                "y": 769.2
+                            }
+                        },
+                        "iD": "11925",
+                        "location": {
+                            "x": 1168.3,
+                            "y": 806.6
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.6000000000000001,
+                            "y": 1.0
+                        },
+                        "type": "WashbasinCabinetsD"
+                    }
+                ],
+            "views": [],
+            "area": 5.170000076293945
+        },
+        {
+            "name": "厨房",
+            "englishName": "Kitchen",
+            "points": [
+                "X=976.573 Y=263.095 Z=0.000",
+                "X=1219.602 Y=263.095 Z=0.000",
+                "X=1219.602 Y=486.057 Z=0.000",
+                "X=976.573 Y=486.057 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 86,
+                    "width": 24.5260009765625,
+                    "height": 150,
+                    "pos": "X=1053.495 Y=263.095 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 150,
+                    "width": 40.1329345703125,
+                    "height": 220,
+                    "pos": "X=1219.602 Y=405.791 Z=0.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1096.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 996.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23391",
+                        "location": {
+                            "x": 996.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FWashbasin"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1096.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 996.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 996.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1041.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 996.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 996.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1196.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 1096.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 1096.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1141.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 1096.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 1096.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1159.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 1096.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 1096.6,
+                            "y": 263.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.3,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1219.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 1159.6,
+                                "y": 426.1
+                            }
+                        },
+                        "iD": "23390",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "HFreezerSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1319.6,
+                                "y": 546.1
+                            },
+                            "min": {
+                                "x": 1219.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23392",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "HFreezerTwo"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1279.6,
+                                "y": 546.1
+                            },
+                            "min": {
+                                "x": 1219.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23391",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FWashbasin"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1279.6,
+                                "y": 546.1
+                            },
+                            "min": {
+                                "x": 1219.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1219.6,
+                                "y": 531.1
+                            },
+                            "min": {
+                                "x": 1159.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1219.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 1159.6,
+                                "y": 426.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 1219.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.3,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1039.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 423.1
+                            }
+                        },
+                        "iD": "23387",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FStove"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1011.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 423.1
+                            }
+                        },
+                        "iD": "23385",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Crangehoods"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1011.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 441.1
+                            }
+                        },
+                        "iD": "23386",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.6,
+                                "y": 521.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23382",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.5,
+                                "y": 521.1
+                            },
+                            "min": {
+                                "x": 976.5,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23383",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalB"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.6,
+                                "y": 521.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 486.1
+                            }
+                        },
+                        "iD": "23384",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalC"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1011.6,
+                                "y": 423.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 378.1
+                            }
+                        },
+                        "iD": "23386",
+                        "location": {
+                            "x": 976.6,
+                            "y": 423.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1011.6,
+                                "y": 378.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 333.1
+                            }
+                        },
+                        "iD": "23386",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.6,
+                                "y": 413.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 378.1
+                            }
+                        },
+                        "iD": "23382",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.5,
+                                "y": 413.1
+                            },
+                            "min": {
+                                "x": 976.5,
+                                "y": 378.1
+                            }
+                        },
+                        "iD": "23383",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalB"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1076.6,
+                                "y": 413.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 378.1
+                            }
+                        },
+                        "iD": "23384",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalC"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1011.6,
+                                "y": 378.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 323.1
+                            }
+                        },
+                        "iD": "23386",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "CnormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 423.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 486.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 441.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 976.6,
+                            "y": 486.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 423.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 363.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 976.6,
+                            "y": 423.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 423.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 378.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 976.6,
+                            "y": 423.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 378.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 323.1
+                            }
+                        },
+                        "iD": "23388",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalA"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 378.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 333.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1066.6,
+                                "y": 378.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 323.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 976.6,
+                            "y": 378.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.2,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1036.6,
+                                "y": 323.1
+                            },
+                            "min": {
+                                "x": 976.6,
+                                "y": 263.1
+                            }
+                        },
+                        "iD": "23389",
+                        "location": {
+                            "x": 976.6,
+                            "y": 323.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.3,
+                            "y": 1.0
+                        },
+                        "type": "FNormalSole"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1019.1,
+                                "y": 305.6
+                            },
+                            "min": {
+                                "x": 994.1,
+                                "y": 280.6
+                            }
+                        },
+                        "iD": "21737",
+                        "location": {
+                            "x": 1006.6,
+                            "y": 293.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Playtool"
+                    }
+                ],
+            "views": [],
+            "area": 5.420000076293945
+        },
+        {
+            "name": "客餐厅",
+            "englishName": "LivingRoom",
+            "points": [
+                "X=1467.090 Y=160.533 Z=0.000",
+                "X=1467.090 Y=243.029 Z=0.000",
+                "X=1516.141 Y=243.029 Z=0.000",
+                "X=1516.141 Y=517.272 Z=0.000",
+                "X=1944.228 Y=517.272 Z=0.000",
+                "X=1944.228 Y=1186.158 Z=0.000",
+                "X=1362.298 Y=1186.158 Z=0.000",
+                "X=1362.298 Y=1344.461 Z=0.000",
+                "X=1203.995 Y=1344.461 Z=0.000",
+                "X=1203.995 Y=738.004 Z=0.000",
+                "X=976.573 Y=738.004 Z=0.000",
+                "X=976.573 Y=515.042 Z=0.000",
+                "X=1364.527 Y=515.042 Z=0.000",
+                "X=1364.527 Y=758.071 Z=0.000",
+                "X=1400.201 Y=758.071 Z=0.000",
+                "X=1400.201 Y=481.598 Z=0.000",
+                "X=1259.735 Y=481.598 Z=0.000",
+                "X=1259.735 Y=160.533 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 56.48500061035156,
+                    "width": 22.30196762084961,
+                    "height": 150,
+                    "pos": "X=1467.090 Y=189.776 Z=90.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                },
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 196,
+                    "width": 24.525970458984375,
+                    "height": 150,
+                    "pos": "X=1759.170 Y=517.272 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 72.28800964355469,
+                    "width": 24.5260009765625,
+                    "height": 150,
+                    "pos": "X=1259.735 Y=197.677 Z=90.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                },
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 89,
+                    "width": 24.5260009765625,
+                    "height": 150,
+                    "pos": "X=1346.690 Y=160.533 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 155,
+                    "width": 37.903076171875,
+                    "height": 220,
+                    "pos": "X=1778.122 Y=1186.158 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 35.674072265625,
+                    "height": 220,
+                    "pos": "X=1463.719 Y=1186.158 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1258.626 Y=1344.461 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 35.6739501953125,
+                    "height": 220,
+                    "pos": "X=1203.995 Y=1147.432 Z=0.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 31.2149658203125,
+                    "height": 220,
+                    "pos": "X=1078.147 Y=738.004 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 84,
+                    "width": 24.5250244140625,
+                    "height": 210,
+                    "pos": "X=976.573 Y=632.156 Z=0.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 149.8070068359375,
+                    "width": 40.1329345703125,
+                    "height": 220,
+                    "pos": "X=1259.735 Y=405.694 Z=0.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1944.2,
+                                "y": 1186.2
+                            },
+                            "min": {
+                                "x": 1844.2,
+                                "y": 1166.2
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 1894.2,
+                            "y": 1176.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1462.3,
+                                "y": 1186.2
+                            },
+                            "min": {
+                                "x": 1362.3,
+                                "y": 1166.2
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 1412.3,
+                            "y": 1176.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1944.2,
+                                "y": 1166.2
+                            },
+                            "min": {
+                                "x": 1844.2,
+                                "y": 776.0
+                            }
+                        },
+                        "iD": "25903",
+                        "location": {
+                            "x": 1894.2,
+                            "y": 971.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.2,
+                            "y": 1.0
+                        },
+                        "type": "MultiSofa"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1921.9,
+                                "y": 769.0
+                            },
+                            "min": {
+                                "x": 1875.2,
+                                "y": 722.3
+                            }
+                        },
+                        "iD": "17085",
+                        "location": {
+                            "x": 1898.6,
+                            "y": 745.7
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "SideTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1397.0,
+                                "y": 1018.2
+                            },
+                            "min": {
+                                "x": 1362.0,
+                                "y": 858.2
+                            }
+                        },
+                        "iD": "25905",
+                        "location": {
+                            "x": 1379.5,
+                            "y": 938.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.9,
+                            "y": 1.0
+                        },
+                        "type": "TVCabinets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1395.5,
+                                "y": 1166.2
+                            },
+                            "min": {
+                                "x": 1360.5,
+                                "y": 1018.2
+                            }
+                        },
+                        "iD": "25904",
+                        "location": {
+                            "x": 1378.0,
+                            "y": 1092.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.6000000000000001,
+                            "y": 1.1
+                        },
+                        "type": "DecorativeCabinets"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1365.5,
+                                "y": 1000.2
+                            },
+                            "min": {
+                                "x": 1362.3,
+                                "y": 876.2
+                            }
+                        },
+                        "iD": "25728",
+                        "location": {
+                            "x": 1362.3,
+                            "y": 938.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 0.6000000000000001,
+                            "y": 1.0
+                        },
+                        "type": "TV"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1801.2,
+                                "y": 1028.2
+                            },
+                            "min": {
+                                "x": 1711.2,
+                                "y": 914.0
+                            }
+                        },
+                        "iD": "25901",
+                        "location": {
+                            "x": 1756.2,
+                            "y": 971.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.1,
+                            "y": 1.1
+                        },
+                        "type": "RoundTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1911.2,
+                                "y": 1158.0
+                            },
+                            "min": {
+                                "x": 1677.0,
+                                "y": 768.0
+                            }
+                        },
+                        "iD": "25898",
+                        "location": {
+                            "x": 1794.1,
+                            "y": 963.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": -90.0
+                        },
+                        "scale": {
+                            "x": 1.2,
+                            "y": 1.2
+                        },
+                        "type": "Rug"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1924.2,
+                                "y": 998.2
+                            },
+                            "min": {
+                                "x": 1922.2,
+                                "y": 944.0
+                            }
+                        },
+                        "iD": "17130",
+                        "location": {
+                            "x": 1924.2,
+                            "y": 971.1
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "Painting"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1516.1,
+                                "y": 1166.2
+                            },
+                            "min": {
+                                "x": 1478.1,
+                                "y": 1158.2
+                            }
+                        },
+                        "iD": "12298",
+                        "location": {
+                            "x": 1497.1,
+                            "y": 1166.2
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 1.0
+                        },
+                        "type": "Painting"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1823.0,
+                                "y": 1001.0
+                            },
+                            "min": {
+                                "x": 1763.0,
+                                "y": 941.0
+                            }
+                        },
+                        "iD": "14428",
+                        "location": {
+                            "x": 1793.0,
+                            "y": 971.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "MainLight"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1944.2,
+                                "y": 1289.7
+                            },
+                            "min": {
+                                "x": 1924.2,
+                                "y": 1189.7
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 1934.2,
+                            "y": 1239.7
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1944.2,
+                                "y": 617.3
+                            },
+                            "min": {
+                                "x": 1924.2,
+                                "y": 517.3
+                            }
+                        },
+                        "iD": "25772",
+                        "location": {
+                            "x": 1934.2,
+                            "y": 567.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": -1.0,
+                            "y": 1.0
+                        },
+                        "type": "ClothCurtain"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1854.0,
+                                "y": 550.0
+                            },
+                            "min": {
+                                "x": 1674.0,
+                                "y": 470.0
+                            }
+                        },
+                        "iD": "21995",
+                        "location": {
+                            "x": 1764.0,
+                            "y": 510.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.1,
+                            "y": 1.0
+                        },
+                        "type": "DiningTable"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1839.0,
+                                "y": 585.0
+                            },
+                            "min": {
+                                "x": 1799.0,
+                                "y": 530.0
+                            }
+                        },
+                        "iD": "17699",
+                        "location": {
+                            "x": 1819.0,
+                            "y": 557.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        "type": "DiningChair"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1795.0,
+                                "y": 585.0
+                            },
+                            "min": {
+                                "x": 1755.0,
+                                "y": 530.0
+                            }
+                        },
+                        "iD": "17699",
+                        "location": {
+                            "x": 1775.0,
+                            "y": 557.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 180.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        "type": "DiningChair"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1795.0,
+                                "y": 490.0
+                            },
+                            "min": {
+                                "x": 1755.0,
+                                "y": 435.0
+                            }
+                        },
+                        "iD": "17699",
+                        "location": {
+                            "x": 1775.0,
+                            "y": 462.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        "type": "DiningChair"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1839.0,
+                                "y": 490.0
+                            },
+                            "min": {
+                                "x": 1799.0,
+                                "y": 435.0
+                            }
+                        },
+                        "iD": "17699",
+                        "location": {
+                            "x": 1819.0,
+                            "y": 462.5
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 0.8,
+                            "y": 0.8
+                        },
+                        "type": "DiningChair"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1944.2,
+                                "y": 557.3
+                            },
+                            "min": {
+                                "x": 1940.2,
+                                "y": 517.3
+                            }
+                        },
+                        "iD": "18416",
+                        "location": {
+                            "x": 1944.2,
+                            "y": 537.3
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 90.0
+                        },
+                        "scale": {
+                            "x": 0.5,
+                            "y": 1.0
+                        },
+                        "type": "Painting"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1775.5,
+                                "y": 520.5
+                            },
+                            "min": {
+                                "x": 1752.6,
+                                "y": 505.4
+                            }
+                        },
+                        "iD": "27096",
+                        "location": {
+                            "x": 1764.0,
+                            "y": 510.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Playtool"
+                    },
+                    {
+                        "box": {
+                            "max": {
+                                "x": 1781.0,
+                                "y": 527.6
+                            },
+                            "min": {
+                                "x": 1746.3,
+                                "y": 492.4
+                            }
+                        },
+                        "iD": "23107",
+                        "location": {
+                            "x": 1764.0,
+                            "y": 510.0
+                        },
+                        "rotator": {
+                            "pitch": 0.0,
+                            "yaw": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "type": "Greenery"
+                    }
+                ],
+            "views": [],
+            "area": 64.51000213623047
+        }
+    ],
+    "outerPoints": [
+        "X=952.048 Y=744.693 Z=0.000",
+        "X=952.048 Y=760.300 Z=0.000",
+        "X=952.048 Y=907.455 Z=0.000",
+        "X=704.560 Y=907.455 Z=0.000",
+        "X=704.560 Y=1230.750 Z=0.000",
+        "X=706.789 Y=1230.750 Z=0.000",
+        "X=706.789 Y=1576.341 Z=0.000",
+        "X=704.560 Y=1576.341 Z=0.000",
+        "X=704.560 Y=1712.348 Z=0.000",
+        "X=1190.617 Y=1712.348 Z=0.000",
+        "X=1190.617 Y=1710.118 Z=0.000",
+        "X=1600.867 Y=1710.118 Z=0.000",
+        "X=1614.245 Y=1710.118 Z=0.000",
+        "X=1968.754 Y=1710.118 Z=0.000",
+        "X=1968.754 Y=1587.489 Z=0.000",
+        "X=1968.754 Y=1576.341 Z=0.000",
+        "X=1968.754 Y=1199.535 Z=0.000",
+        "X=1966.525 Y=1199.535 Z=0.000",
+        "X=1966.525 Y=492.746 Z=0.000",
+        "X=1538.438 Y=492.746 Z=0.000",
+        "X=1538.438 Y=218.503 Z=0.000",
+        "X=1489.386 Y=218.503 Z=0.000",
+        "X=1489.386 Y=136.007 Z=0.000",
+        "X=1235.209 Y=136.007 Z=0.000",
+        "X=1235.209 Y=238.569 Z=0.000",
+        "X=952.048 Y=238.569 Z=0.000",
+        "X=952.048 Y=490.516 Z=0.000",
+        "X=952.048 Y=508.353 Z=0.000",
+        "X=952.048 Y=744.693 Z=0.000"
+    ],
+    "yDList": [],
+    "baseInfo": {
+        "inside_area": 148.0832061767578
+    },
+    "lightParams": {},
+    "lightInfos": []
+}

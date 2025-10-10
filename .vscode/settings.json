@@ -1,0 +1,6 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": [],
+    "python.analysis.exclude": [ "**/__pycache__", "**/unsloth_compiled_cache", "**/lora", "**/result*.json", "**/error.log" ]
+}
