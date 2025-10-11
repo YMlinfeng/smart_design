@@ -79,7 +79,8 @@ RESULT_DIR.mkdir(exist_ok=True, parents=True)
 JSON_DIR = Path("../data/户型训练json集-7.30/不带家具的户型json")
 # JSON_ID_LIST = ["6524", "7143", "8362", "9485", "13130", "18009", "20177", "21989", "23435", "25175"]
 # JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
-JSON_ID_LIST = ["6524", "6563"]
+# JSON_ID_LIST = ["6524", "6563"]
+JSON_ID_LIST = ["6597"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
 # 生成长度：与“超参数默认”不冲突（不涉及模型权重或训练），仅作为运行上限以免无限生成。
@@ -146,7 +147,8 @@ def generate_with_thinking(
         messages,
         tokenize=False,
         add_generation_prompt=True,
-        enable_thinking=True,  # 默认启用思维模式
+        # enable_thinking=True,  # 默认启用思维模式
+        enable_thinking=False,  # 默认启用思维模式
     )
 
     model_inputs = tokenizer.__call__([text], return_tensors="pt").to(model.device) 
@@ -177,6 +179,7 @@ def generate_with_thinking(
     content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("\n").strip()
 
     return content, thinking_content
+
 
 # ===============================================================
 # 7. 主流程
@@ -220,9 +223,9 @@ def main() -> None:
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
-            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen")):
-                print(f"跳过处理 {room_en_name}")
-                continue
+            # if room_en_name.startswith(("LivingRoom", "Study", "Kitchen")):
+            #     print(f"跳过处理 {room_en_name}")
+            #     continue
 
             messages = build_messages(room_data)
 

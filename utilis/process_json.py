@@ -32,10 +32,14 @@ def safe_literal_eval(data_str: str) -> Any:
     """
     安全将字符串解析为 Python 对象，并对常见格式错误做修复。
     """
-    try:
-        return ast.literal_eval(data_str)
-    except SyntaxError:
-        pass
+    # 提取 modelInfos 对应的数组部分
+    match = re.search(r'"modelInfos"\s*:\s*(\[[\s\S]*\])', data_str)
+    if match:
+        data_str = match.group(1)
+        try:
+            return ast.literal_eval(data_str)
+        except (SyntaxError, ValueError):
+            pass
 
     fixed = data_str
     # 常见错误修复
