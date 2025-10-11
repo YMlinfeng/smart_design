@@ -51,7 +51,6 @@ def safe_literal_eval(data_str: str) -> Any:
 
     return ast.literal_eval(fixed)
 
-
 def del_key(obj: Any, key: str) -> Any:
     """
     递归删除 dict / list 中指定键。
@@ -127,3 +126,5 @@ def transform_data(data: Any) -> Any:
     if isinstance(data, (int, float)):
         return format_number(data)
     return data
+
+

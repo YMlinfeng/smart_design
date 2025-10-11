@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-整体户型设计自动化脚本（详细注释版）
-
-核心功能：
-1. 加载 Qwen3-32B 主模型 + LoRA Adapter。
-2. 对指定房间 JSON 依次进行多模态提示词构造并生成设计方案。
-3. 生成结果同时写入实验日志与 result_*.json。
-"""
 
 # ===============================================================
 # 1. 通用标准库  —— 基础功能 / 类型注解 / 时间日期
@@ -82,17 +74,14 @@ print("显卡计算等级:", torch.cuda.get_device_capability())
 # ===============================================================
 EXPERIMENT_DIR = Path("experiments")
 EXPERIMENT_DIR.mkdir(exist_ok=True, parents=True)
-
 RESULT_DIR = Path("results")
 RESULT_DIR.mkdir(exist_ok=True, parents=True)
-
 JSON_DIR = Path("../data/户型训练json集-7.30/不带家具的户型json")
 # JSON_ID_LIST = ["6524", "7143", "8362", "9485", "13130", "18009", "20177", "21989", "23435", "25175"]
-JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
-
+# JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
+JSON_ID_LIST = ["6524", "6563"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
-
 # 生成长度：与“超参数默认”不冲突（不涉及模型权重或训练），仅作为运行上限以免无限生成。
 MAX_NEW_TOKENS = 128000
 
@@ -108,7 +97,7 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
 
     if room_en_name.startswith("LivingRoom"):
         instruction = living_canteen_room
-    elif room_en_name.startswith(("SecondBedroom", "MasterBedroom")):
+    elif room_en_name.endswith("Bedroom"):
         instruction = bedroom
     elif room_en_name.startswith("Balcony"):
         instruction = balcony
@@ -122,7 +111,7 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
         instruction = general_prompt
 
     messages = [
-        {"role": "system", "content": DESIGN_INSTRUCT_V4},
+        {"role": "system", "content": DESIGN_INSTRUCT},
         {
             "role": "user",
             "content": (
@@ -136,7 +125,8 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
 
 
 def generate_with_thinking(
-    model: AutoModelForCausalLM,
+    # model: Union[AutoModelForCausalLM, _BaseModelWithGenerate],
+    model: Any,
     tokenizer: AutoTokenizer,
     messages: List[Dict[str, str]],
     max_new_tokens: int = MAX_NEW_TOKENS,
@@ -159,7 +149,7 @@ def generate_with_thinking(
         enable_thinking=True,  # 默认启用思维模式
     )
 
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device) 
+    model_inputs = tokenizer.__call__([text], return_tensors="pt").to(model.device) 
 
     # 可选：根据上下文长度钳制生成上限，防越界
     # input_len = model_inputs.input_ids.shape[1]
@@ -168,7 +158,7 @@ def generate_with_thinking(
     #       or 32768
     # safe_max_new = max(1, min(max_new_tokens, ctx - input_len))
 
-    # 纯默认推理（不设温度等），仅限制上限长度 #todo
+    # 纯默认推理（不设温度等），仅限制上限长度 
     generated_ids = model.generate(
         **model_inputs,
         max_new_tokens=max_new_tokens,
@@ -217,7 +207,6 @@ def main() -> None:
         with json_file.open("r", encoding="utf-8") as f:
             datas = json.load(f)
 
-        # 可选：对整体数据副本做清洗（原脚本逻辑保留）
         sub_datas = deepcopy(datas)
         for k in ["isValid", "views", "rectangles", "heightToFloor", "height",
                   "clipLocations", "views", "lightParams", "lightInfos",
@@ -230,10 +219,13 @@ def main() -> None:
         # —— 遍历每个房间，独立生成 —— #
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
+            
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen")):
+                print(f"跳过处理 {room_en_name}")
+                continue
 
             messages = build_messages(room_data)
 
-            # 写日志（追加）
             with exp_file.open("a", encoding="utf-8") as log:
                 log.write(f"实验时间: {DT.datetime.now():%Y-%m-%d %H:%M:%S}\n")
                 log.write(f"数据文件: {json_file}\n")
