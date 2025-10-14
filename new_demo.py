@@ -196,7 +196,7 @@ def main() -> None:
         device_map="auto",
     )
 
-    # 小提示：如需强制单卡，可改为 model.to(device) 并移除 device_map
+    # todo：如单卡，可改为 model.to(device) 并移除 device_map
 
     for json_id in JSON_ID_LIST:
         json_file = JSON_DIR / f"{json_id}.json"
