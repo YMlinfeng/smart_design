@@ -80,7 +80,7 @@ JSON_DIR = Path("../data/户型训练json集-7.30/不带家具的户型json")
 # JSON_ID_LIST = ["6524", "7143", "8362", "9485", "13130", "18009", "20177", "21989", "23435", "25175"]
 # JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
 # JSON_ID_LIST = ["6524", "6563"]
-JSON_ID_LIST = ["6597"]
+JSON_ID_LIST = ["6524"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
 # 生成长度：与“超参数默认”不冲突（不涉及模型权重或训练），仅作为运行上限以免无限生成。
@@ -212,10 +212,14 @@ def main() -> None:
 
         sub_datas = deepcopy(datas)
         # for k in ["isValid", "views", "rectangles", "heightToFloor", "height",
-        #           "clipLocations", "views", "lightParams", "lightInfos",
+        #           "clipLocations", "lightParams", "lightInfos",
         #           "yDList", "baseInfo", "wallHeight", "totalArea", "taskId", 
         #           "centerPos", "windowList", "doorList"]:
-        for k in ["wallHeight", "centerPos","totalArea"]:
+        for k in ["wallHeight", "centerPos","totalArea","windowList",
+                  "doorList", "outerPoints", "yDList", "baseInfo", "lightParams",
+                  "lightInfos",
+                  "isValid", "views", "rectangles", "heightToFloor", "height",
+                  "clipLocations", "taskId"]:
             sub_datas = del_key(sub_datas, k)
         sub_datas = transform_data(sub_datas)
 
@@ -225,9 +229,9 @@ def main() -> None:
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
-            # if room_en_name.startswith(("LivingRoom", "Study", "Kitchen")):
-            #     print(f"跳过处理 {room_en_name}")
-            #     continue
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom")):
+                print(f"跳过处理 {room_en_name}")
+                continue
 
             messages = build_messages(room_data)
 
