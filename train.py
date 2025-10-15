@@ -1,5 +1,3 @@
-# hzt 2025/3
-# ccl 评测
 import torch
 import os
 import random

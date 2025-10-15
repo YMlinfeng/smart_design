@@ -213,7 +213,9 @@ def main() -> None:
         sub_datas = deepcopy(datas)
         for k in ["isValid", "views", "rectangles", "heightToFloor", "height",
                   "clipLocations", "views", "lightParams", "lightInfos",
-                  "yDList", "baseInfo", "wallHeight", "totalArea", "taskId"]:
+                  "yDList", "baseInfo", "wallHeight", "totalArea", "taskId", 
+                  "centerPos", "windowList", "doorList"]:
+        for k in ["wall"]:
             sub_datas = del_key(sub_datas, k)
         sub_datas = transform_data(sub_datas)
 
