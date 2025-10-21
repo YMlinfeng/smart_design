@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# ===============================================================
-# 1. 通用标准库  —— 基础功能 / 类型注解 / 时间日期
-# ===============================================================
 import os
 import sys
 import re
@@ -21,10 +18,6 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 
 # 提高递归深度避免深层 JSON 处理时报错
 sys.setrecursionlimit(8000)
-
-# ===============================================================
-# 2. 第三方库  —— 深度学习 / 数据集 / 加速器
-# ===============================================================
 import torch
 import torch.nn.functional as F
 from torch.autograd import grad_mode
@@ -49,8 +42,8 @@ from liger_kernel.transformers.model.loss_utils import LigerForCausalLMLoss
 # ===============================================================
 # 3. 项目本地依赖  —— 提示词文件
 # ===============================================================
-from sys_prompt import *
-from house_prompt import *
+from prompt.sys_prompt import *
+from prompt.house_prompt import *
 from utilis.process_json import *
 
 # ===============================================================
@@ -84,12 +77,10 @@ JSON_ID_LIST = ["6524"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
 # 生成长度：与“超参数默认”不冲突（不涉及模型权重或训练），仅作为运行上限以免无限生成。
-MAX_NEW_TOKENS = 128000
+MAX_NEW_TOKENS = 328000
 
 
-# ===============================================================
-# 6. Qwen3 纯原生推理（按官方示范的方法）
-# ===============================================================
+# 6. Qwen3 推理
 def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
     """
     根据房间英文名选择指令模板，构造 messages（system + user）。
@@ -99,7 +90,8 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
     if room_en_name.startswith("LivingRoom"):
         instruction = living_canteen_room
     elif room_en_name.endswith("Bedroom"):
-        instruction = bedroom
+        # instruction = bedroom
+        instruction = bedroom_v2
     elif room_en_name.startswith("Balcony"):
         instruction = balcony
     elif room_en_name.startswith("Bathroom"):
@@ -117,8 +109,8 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
             "role": "user",
             "content": (
                 "通用规则：" + general_prompt +
-                "\n房间JSON：" + str(room_data) +
-                "\n用户生成指南：" + instruction
+                "\n房间JSON：" + str(room_data) +  # json文件
+                "\n用户生成指南：" + instruction # specific prompt
             ),
         },
     ]
@@ -221,7 +213,7 @@ def main() -> None:
                   "isValid", "views", "rectangles", "heightToFloor", "height",
                   "clipLocations", "taskId"]:
             sub_datas = del_key(sub_datas, k)
-        sub_datas = transform_data(sub_datas)
+        sub_datas = transform_data(sub_datas) # roomList字段:{'roomList': [{...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}]}
 
         new_room_list: List[Dict[str, Any]] = []
 

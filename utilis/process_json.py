@@ -29,8 +29,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # ===============================================================
 # 3. 项目本地依赖（提示词）
 # ===============================================================
-from sys_prompt import *   # 包含 DESIGN_INSTRUCT_V4
-from house_prompt import * # 包含各房型的 instruction 片段
+from prompt.sys_prompt import *   # 包含 DESIGN_INSTRUCT_V4
+from prompt.house_prompt import * # 包含各房型的 instruction 片段
 
 def safe_literal_eval(data_str: str) -> Any:
     """

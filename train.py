@@ -6,8 +6,8 @@ import unsloth
 # from vllm import LLM
 sys.setrecursionlimit(8000)
 import math
-from sys_prompt import *
-from house_prompt import *
+from prompt.sys_prompt import *
+from prompt.house_prompt import *
 
 from importlib.machinery import SourcelessFileLoader
 import json
