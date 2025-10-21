@@ -89,7 +89,7 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
 
     if room_en_name.startswith("LivingRoom"):
         instruction = living_canteen_room
-    elif room_en_name.endswith("Bedroom"):
+    elif room_en_name.endswith("Bedroom") or room_en_name.endswith("Bedroom2"):
         # instruction = bedroom
         instruction = bedroom_v2
     elif room_en_name.startswith("Balcony"):
@@ -101,16 +101,15 @@ def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
     elif room_en_name.startswith("Kitchen"):
         instruction = Kitchen
     else:
-        instruction = general_prompt
+        print(f"critical error, cannot find room name: {room_en_name}")
+        instruction = ""
 
     messages = [
-        {"role": "system", "content": DESIGN_INSTRUCT},
+        {"role": "system", "content": DESIGN_INSTRUCT_2},
         {
             "role": "user",
             "content": (
-                "通用规则：" + general_prompt +
-                "\n房间JSON：" + str(room_data) +  # json文件
-                "\n用户生成指南：" + instruction # specific prompt
+                "\n用户生成指南：" + instruction + str(room_data)
             ),
         },
     ]
@@ -226,6 +225,9 @@ def main() -> None:
                 continue
 
             messages = build_messages(room_data)
+            from pprint import pprint
+            with open('debug_messages.txt', 'w', encoding='utf-8') as f:
+                pprint(messages, stream=f)
 
             with exp_file.open("a", encoding="utf-8") as log:
                 log.write(f"实验时间: {DT.datetime.now():%Y-%m-%d %H:%M:%S}\n")
@@ -235,13 +237,14 @@ def main() -> None:
 
                 start = time.time()
                 content, thinking = generate_with_thinking(model, tokenizer, messages)
+                # content, thinking = "debug", "debug"
                 cost = time.time() - start
 
                 # —— 解析返回值 —— #
                 try:
                     parsed = safe_literal_eval(content)
                     room_data["modelInfos"] = parsed
-                except Exception as e:
+                except Exception as e:ok
                     print(f"[ParseError] {e}，原样保留字符串。")
                     room_data["modelInfos"] = content
 
