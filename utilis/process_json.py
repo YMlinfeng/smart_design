@@ -32,6 +32,10 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from prompt.sys_prompt import *   
 from prompt.house_prompt import * # 包含各房型的 instruction 片段
 
+import json
+import re
+
+
 def safe_literal_eval(data_str: str) -> Any:
     """
     安全将字符串解析为 Python 对象，并对常见格式错误做修复。
@@ -136,3 +140,52 @@ def transform_data(data: Any) -> Any:
     return data
 
 
+import os
+import json
+from pathlib import Path
+
+def _walk_and_convert(obj):
+    """
+    递归扫描任何 dict / list 容器，找到 key == 'modelInfos' 且 value 为 str 的字段，
+    并按需求完成转换：
+      1. 把字符串里的字面量 '\\n' 换成真正的换行 `\n`
+      2. 再按换行切分成列表
+    """
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k == "modelInfos" and isinstance(v, str):
+                # 将字面量 \n => 真正换行
+                v_real_newline = v.replace(r"\n", "\n")
+
+                # 按换行切分并去掉可能的空行
+                lines = [line for line in v_real_newline.split("\n") if line.strip()]
+
+                # 最终写回：用列表包裹
+                obj[k] = lines
+            else:
+                _walk_and_convert(v)   # 继续递归
+    elif isinstance(obj, list):
+        for item in obj:
+            _walk_and_convert(item)
+
+def convert_model_infos(folder: str | Path) -> None:
+    """
+    遍历 folder 中所有 .json 文件，执行 _walk_and_convert，
+    并把结果写到同目录的 n_<原文件名>.json。
+    """
+    folder = Path(folder)
+    for json_path in folder.glob("*.json"):
+        with json_path.open("r", encoding="utf-8") as f:
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"[跳过] {json_path.name}: 解析 JSON 失败 -> {e}")
+                continue
+
+        _walk_and_convert(data)
+
+        new_name = json_path.with_name(f"n_{json_path.name}")
+        with new_name.open("w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+        print(f"已处理: {json_path.name}  ->  {new_name.name}")

@@ -69,18 +69,17 @@ EXPERIMENT_DIR = Path("experiments")
 EXPERIMENT_DIR.mkdir(exist_ok=True, parents=True)
 RESULT_DIR = Path("results")
 RESULT_DIR.mkdir(exist_ok=True, parents=True)
-JSON_DIR = Path("../data/户型训练json集-7.30/不带家具的户型json")
+JSON_DIR = Path("../data/data730/不带家具的户型json")
 # JSON_ID_LIST = ["6524", "7143", "8362", "9485", "13130", "18009", "20177", "21989", "23435", "25175"]
 # JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
-# JSON_ID_LIST = ["6524", "6563"]
-JSON_ID_LIST = ["6524"]
+JSON_ID_LIST = ["6524", "6563"]
+# JSON_ID_LIST = ["6524"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
 # 生成长度：与“超参数默认”不冲突（不涉及模型权重或训练），仅作为运行上限以免无限生成。
 MAX_NEW_TOKENS = 328000
 
 
-# 6. Qwen3 推理
 def build_messages(room_data: Dict[str, Any]) -> List[Dict[str, str]]:
     """
     根据房间英文名选择指令模板，构造 messages（system + user）。
@@ -172,9 +171,6 @@ def generate_with_thinking(
     return content, thinking_content
 
 
-# ===============================================================
-# 7. 主流程
-# ===============================================================
 def main() -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -220,13 +216,13 @@ def main() -> None:
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
-            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom")):
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Master")): #todo
                 print(f"跳过处理 {room_en_name}")
                 continue
 
             messages = build_messages(room_data)
             from pprint import pprint
-            with open('debug_messages.txt', 'w', encoding='utf-8') as f:
+            with open('debug/messages.txt', 'w', encoding='utf-8') as f:
                 pprint(messages, stream=f)
 
             with exp_file.open("a", encoding="utf-8") as log:
@@ -239,15 +235,21 @@ def main() -> None:
                 content, thinking = generate_with_thinking(model, tokenizer, messages)
                 # content, thinking = "debug", "debug"
                 cost = time.time() - start
+                with open('debug/content.txt', 'w', encoding='utf-8') as f:
+                    pprint(content, stream=f)
+                # with open('debug/think.txt', 'w', encoding='utf-8') as f:
+                #     pprint(thinking, stream=f)
 
                 # —— 解析返回值 —— #
                 try:
-                    parsed = safe_literal_eval(content)
+                    parsed = safe_literal_eval(parsed.replace("`", "").replace("json", "").strip())
                     room_data["modelInfos"] = parsed
-                except Exception as e:ok
+                except Exception as e:
                     print(f"[ParseError] {e}，原样保留字符串。")
                     room_data["modelInfos"] = content
 
+                with open('debug/room_data.txt', 'w', encoding='utf-8') as f:
+                    pprint(room_data, stream=f)
                 new_room_list.append(room_data)
 
                 # 写入日志
@@ -268,8 +270,11 @@ def main() -> None:
         print(f"[Done] {json_id} 结果写入 {result_file}")
 
 
+
 # ===============================================================
 # 8. CLI 入口
 # ===============================================================
 if __name__ == "__main__":
     main()
+    convert_model_infos("/root/autodl-tmp/smart_design/results")
+    print("Done")
