@@ -74,9 +74,6 @@ class HyperParameters:
 
 config = HyperParameters()
 
-
-
-
 DATA_TRAIN = "data/dataset_2.0/train.json"
 DATA_VAL = "data/dataset_2.0/val.json"
 DATA_TEST = "data/dataset_2.0/test.json"

@@ -1,0 +1,43 @@
+{
+    "name": "主卧",
+    "englishName": "MasterBedroom",
+    "points": [
+        "X=1684.122 Y=1287.601 Z=0.000",
+        "X=1684.122 Y=1651.441 Z=0.000",
+        "X=1339.890 Y=1651.441 Z=0.000",
+        "X=1339.890 Y=1287.601 Z=0.000"
+    ],
+    "rectangles": [],
+    "windowList": [
+        {
+            "windowType": "",
+            "heightToFloor": 10,
+            "length": 244,
+            "width": 23.9659423828125,
+            "height": 230,
+            "pos": "X=1503.291 Y=1651.441 Z=10.000",
+            "direction": "X=-1.000 Y=0.000 Z=0.000"
+        }
+    ],
+    "doorList": [
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 28.3218994140625,
+            "height": 220,
+            "pos": "X=1394.669 Y=1287.601 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 160,
+            "width": 28.3218994140625,
+            "height": 220,
+            "pos": "X=1565.383 Y=1287.601 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        }
+    ],
+    "modelInfos": [],
+    "views": [],
+    "area": 12.520000457763672
+}
