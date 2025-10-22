@@ -71,8 +71,8 @@ RESULT_DIR = Path("results")
 RESULT_DIR.mkdir(exist_ok=True, parents=True)
 JSON_DIR = Path("../data/data730/不带家具的户型json")
 # JSON_ID_LIST = ["6524", "7143", "8362", "9485", "13130", "18009", "20177", "21989", "23435", "25175"]
-# JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
-JSON_ID_LIST = ["6524", "6563"]
+JSON_ID_LIST = ["6524", "6563", "6597", "6690", "6703", "18009", "20177", "21989", "23435", "25175"]
+# JSON_ID_LIST = ["6524", "6563"]
 # JSON_ID_LIST = ["6524"]
 # Qwen3 思维闭合特殊 token id
 THINK_END_ID = 151668
@@ -216,7 +216,8 @@ def main() -> None:
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
-            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Second")): #todo
+            # if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Second")): #todo
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom")): #todo
                 print(f"不处理 {room_en_name}")
                 new_room_list.append(room_data)
                 continue

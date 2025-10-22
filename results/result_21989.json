@@ -1,0 +1,534 @@
+{
+    "wallHeight": 270,
+    "centerPos": "X=925.684 Y=694.263 Z=0.000",
+    "totalArea": "75.87",
+    "windowList": [
+        {
+            "windowType": "OT_Ground_Window",
+            "heightToFloor": 10,
+            "length": 205,
+            "width": 24,
+            "height": 230,
+            "pos": "X=673.435 Y=1164.819 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 83,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1311.386 Y=552.325 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 84,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1208.789 Y=268.448 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 194,
+            "width": 24,
+            "height": 150,
+            "pos": "X=1166.362 Y=115.710 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 86,
+            "width": 24,
+            "height": 150,
+            "pos": "X=954.997 Y=115.710 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_Window",
+            "heightToFloor": 90,
+            "length": 160,
+            "width": 24,
+            "height": 150,
+            "pos": "X=683.463 Y=115.710 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_RectBayWindow",
+            "heightToFloor": 45,
+            "length": 208.27890014648438,
+            "width": 24,
+            "height": 195,
+            "pos": "X=1008.224 Y=993.567 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        },
+        {
+            "windowType": "OT_RectBayWindow",
+            "heightToFloor": 45,
+            "length": 209.8217010498047,
+            "width": 24,
+            "height": 195,
+            "pos": "X=1323.728 Y=995.110 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        }
+    ],
+    "doorList": [
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1096.447 Y=243.771 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1073.315 Y=485.995 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=952.146 Y=482.909 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1108.594 Y=635.632 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 220,
+            "pos": "X=1180.245 Y=553.530 Z=0.000",
+            "direction": "X=1.000 Y=0.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 149,
+            "width": 50,
+            "height": 220,
+            "pos": "X=690.329 Y=297.774 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 154,
+            "width": 50,
+            "height": 220,
+            "pos": "X=688.167 Y=1004.357 Z=0.000",
+            "direction": "X=0.000 Y=1.000 Z=0.000"
+        },
+        {
+            "heightToFloor": 0,
+            "length": 79,
+            "width": 50,
+            "height": 210,
+            "pos": "X=434.026 Y=313.202 Z=0.000",
+            "direction": "X=0.000 Y=-1.000 Z=0.000"
+        }
+    ],
+    "roomList": [
+        {
+            "name": "阳台",
+            "englishName": "Balcony",
+            "points": [
+                "X=502.955 Y=1005.910 Z=0.000",
+                "X=839.287 Y=1005.910 Z=0.000",
+                "X=839.287 Y=1161.733 Z=0.000",
+                "X=502.955 Y=1161.733 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 10,
+                    "length": 205,
+                    "width": 23.1419677734375,
+                    "height": 230,
+                    "pos": "X=673.435 Y=1161.733 Z=10.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 154,
+                    "width": 29.31298828125,
+                    "height": 220,
+                    "pos": "X=688.167 Y=1005.910 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 5.239999771118164
+        },
+        {
+            "name": "次卧",
+            "englishName": "SecondBedroom",
+            "points": [
+                "X=870.143 Y=637.179 Z=0.000",
+                "X=1163.276 Y=637.179 Z=0.000",
+                "X=1163.276 Y=973.511 Z=0.000",
+                "X=870.143 Y=973.511 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 45,
+                    "length": 208.27891540527344,
+                    "width": 23.14202880859375,
+                    "height": 195,
+                    "pos": "X=1008.224 Y=973.511 Z=45.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 16.97100830078125,
+                    "height": 220,
+                    "pos": "X=1108.594 Y=637.179 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": "[{\"iD\":\"1\",\"type\":\"DoubleBed\",\"box\":{\"min\":{\"x\":920.1430000000001,\"y\":637.179},\"max\":{\"x\":1110.143,\"y\":777.179},\"isValid\":true},\"location\":{\"x\":1015.143,\"y\":707.179},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"BedsideTable\",\"box\":{\"min\":{\"x\":1110.143,\"y\":717.179},\"max\":{\"x\":1140.143,\"y\":747.179},\"isValid\":true},\"location\":{\"x\":1125.143,\"y\":732.179},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"Curtain\",\"box\":{\"min\":{\"x\":870.1430000000001,\"y\":900.511},\"max\":{\"x\":1163.276,\"y\":973.511},\"isValid\":true},\"location\":{\"x\":1016.7095,\"y\":937.011},\"rotator\":{\"pitch\":0,\"yaw\":0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"MainLight\",\"box\":{\"min\":{\"x\":1016.7095,\"y\":805.345},\"max\":{\"x\":1026.7095,\"y\":815.345},\"isValid\":true},\"location\":{\"x\":1021.7095,\"y\":810.345},\"rotator\":{\"pitch\":0,\"yaw\":0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"Lamp\",\"box\":{\"min\":{\"x\":900.1430000000001,\"y\":857.179},\"max\":{\"x\":910.1430000000001,\"y\":867.179},\"isValid\":true},\"location\":{\"x\":905.1430000000001,\"y\":862.179},\"rotator\":{\"pitch\":0,\"yaw\":0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}}]",
+            "views": [],
+            "area": 9.859999656677246
+        },
+        {
+            "name": "主卧",
+            "englishName": "MasterBedroom",
+            "points": [
+                "X=1181.790 Y=499.869 Z=0.000",
+                "X=1308.300 Y=499.869 Z=0.000",
+                "X=1308.300 Y=620.208 Z=0.000",
+                "X=1481.094 Y=620.208 Z=0.000",
+                "X=1481.094 Y=973.511 Z=0.000",
+                "X=1181.790 Y=973.511 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 83,
+                    "width": 23.1419677734375,
+                    "height": 150,
+                    "pos": "X=1308.300 Y=552.325 Z=90.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                },
+                {
+                    "windowType": "",
+                    "heightToFloor": 45,
+                    "length": 209.82171630859375,
+                    "width": 23.14202880859375,
+                    "height": 195,
+                    "pos": "X=1323.728 Y=973.511 Z=45.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 21.5989990234375,
+                    "height": 220,
+                    "pos": "X=1181.790 Y=553.530 Z=0.000",
+                    "direction": "X=0.000 Y=-1.000 Z=0.000"
+                }
+            ],
+            "modelInfos": "{\"iD\":\"1\",\"type\":\"DoubleBed\",\"box\":{\"min\":{\"x\":1242.8699999999999,\"y\":767.511},\"max\":{\"x\":1342.8699999999999,\"y\":867.511},\"isValid\":true},\"location\":{\"x\":1292.8699999999999,\"y\":817.511},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"BedsideTable\",\"box\":{\"min\":{\"x\":1332.8699999999999,\"y\":837.511},\"max\":{\"x\":1352.8699999999999,\"y\":857.511},\"isValid\":true},\"location\":{\"x\":1342.8699999999999,\"y\":847.511},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"BedsideTable\",\"box\":{\"min\":{\"x\":1242.8699999999999,\"y\":837.511},\"max\":{\"x\":1262.8699999999999,\"y\":857.511},\"isValid\":true},\"location\":{\"x\":1252.8699999999999,\"y\":847.511},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"Armoire\",\"box\":{\"min\":{\"x\":1481.094,\"y\":767.511},\"max\":{\"x\":1501.094,\"y\":887.511},\"isValid\":true},\"location\":{\"x\":1491.094,\"y\":827.511},\"rotator\":{\"pitch\":0,\"yaw\":90.000000000000014},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"MainLight\",\"box\":{\"min\":{\"x\":1332.8699999999999,\"y\":767.511},\"max\":{\"x\":1342.8699999999999,\"y\":777.511},\"isValid\":true},\"location\":{\"x\":1337.8699999999999,\"y\":772.511},\"rotator\":{\"pitch\":0,\"yaw\":0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"ClothCurtain\",\"box\":{\"min\":{\"x\":1308.3,\"y\":552.325},\"max\":{\"x\":1391.442,\"y\":575.467},\"isValid\":true},\"location\":{\"x\":1349.871,\"y\":563.896},\"rotator\":{\"pitch\":0,\"yaw\":180},\"scale\":{\"x\":1,\"y\":1,\"z\":1}},{\"iD\":\"1\",\"type\":\"ClothCurtain\",\"box\":{\"min\":{\"x\":1323.728,\"y\":973.511},\"max\":{\"x\":1533.549,\"y\":996.653},\"isValid\":true},\"location\":{\"x\":1428.638,\"y\":985.082},\"rotator\":{\"pitch\":0,\"yaw\":180},\"scale\":{\"x\":1,\"y\":1,\"z\":1}}]",
+            "views": [],
+            "area": 12.100000381469727
+        },
+        {
+            "name": "客餐厅",
+            "englishName": "LivingRoom",
+            "points": [
+                "X=1160.191 Y=499.869 Z=0.000",
+                "X=1160.191 Y=620.208 Z=0.000",
+                "X=840.830 Y=620.208 Z=0.000",
+                "X=840.830 Y=976.597 Z=0.000",
+                "X=502.955 Y=976.597 Z=0.000",
+                "X=502.955 Y=476.727 Z=0.000",
+                "X=371.816 Y=476.727 Z=0.000",
+                "X=371.816 Y=311.647 Z=0.000",
+                "X=839.287 Y=311.647 Z=0.000",
+                "X=839.287 Y=499.869 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 21.5989990234375,
+                    "height": 220,
+                    "pos": "X=1160.191 Y=553.530 Z=0.000",
+                    "direction": "X=0.000 Y=1.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 16.97100830078125,
+                    "height": 220,
+                    "pos": "X=1108.594 Y=620.208 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 154,
+                    "width": 29.31298828125,
+                    "height": 220,
+                    "pos": "X=688.167 Y=976.597 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 24.68499755859375,
+                    "height": 210,
+                    "pos": "X=434.026 Y=311.647 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 149,
+                    "width": 15.428009033203125,
+                    "height": 220,
+                    "pos": "X=690.329 Y=311.647 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 18.51300048828125,
+                    "height": 220,
+                    "pos": "X=952.146 Y=499.869 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 15.427978515625,
+                    "height": 220,
+                    "pos": "X=1073.315 Y=499.869 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 28.450000762939453
+        },
+        {
+            "name": "书房",
+            "englishName": "Study",
+            "points": [
+                "X=1032.138 Y=271.534 Z=0.000",
+                "X=1309.843 Y=271.534 Z=0.000",
+                "X=1309.843 Y=484.441 Z=0.000",
+                "X=1032.138 Y=484.441 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 84,
+                    "width": 29.313003540039062,
+                    "height": 150,
+                    "pos": "X=1208.789 Y=271.534 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 29.313003540039062,
+                    "height": 220,
+                    "pos": "X=1096.447 Y=271.534 Z=0.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 15.427978515625,
+                    "height": 220,
+                    "pos": "X=1073.315 Y=484.441 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 5.909999847412109
+        },
+        {
+            "name": "阳台2",
+            "englishName": "Balcony2",
+            "points": [
+                "X=1032.138 Y=118.796 Z=0.000",
+                "X=1309.843 Y=118.796 Z=0.000",
+                "X=1309.843 Y=242.221 Z=0.000",
+                "X=1032.138 Y=242.221 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 194,
+                    "width": 24.68499755859375,
+                    "height": 150,
+                    "pos": "X=1166.362 Y=118.796 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                },
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 84,
+                    "width": 29.313003540039062,
+                    "height": 150,
+                    "pos": "X=1208.789 Y=242.221 Z=90.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 29.313003540039062,
+                    "height": 220,
+                    "pos": "X=1096.447 Y=242.221 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 3.430000066757202
+        },
+        {
+            "name": "卫生间",
+            "englishName": "Bathroom",
+            "points": [
+                "X=870.143 Y=118.796 Z=0.000",
+                "X=1004.367 Y=118.796 Z=0.000",
+                "X=1004.367 Y=481.356 Z=0.000",
+                "X=870.143 Y=481.356 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 86,
+                    "width": 24.68499755859375,
+                    "height": 150,
+                    "pos": "X=954.997 Y=118.796 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 79,
+                    "width": 18.51300048828125,
+                    "height": 220,
+                    "pos": "X=952.146 Y=481.356 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 4.869999885559082
+        },
+        {
+            "name": "厨房",
+            "englishName": "Kitchen",
+            "points": [
+                "X=501.412 Y=118.796 Z=0.000",
+                "X=840.830 Y=118.796 Z=0.000",
+                "X=840.830 Y=296.219 Z=0.000",
+                "X=501.412 Y=296.219 Z=0.000"
+            ],
+            "rectangles": [],
+            "windowList": [
+                {
+                    "windowType": "",
+                    "heightToFloor": 90,
+                    "length": 160,
+                    "width": 24.68499755859375,
+                    "height": 150,
+                    "pos": "X=683.463 Y=118.796 Z=90.000",
+                    "direction": "X=1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "doorList": [
+                {
+                    "heightToFloor": 0,
+                    "length": 149,
+                    "width": 15.428009033203125,
+                    "height": 220,
+                    "pos": "X=690.329 Y=296.219 Z=0.000",
+                    "direction": "X=-1.000 Y=0.000 Z=0.000"
+                }
+            ],
+            "modelInfos": [],
+            "views": [],
+            "area": 6.019999980926514
+        }
+    ],
+    "outerPoints": [
+        "X=1332.985 Y=94.111 Z=0.000",
+        "X=1027.509 Y=94.111 Z=0.000",
+        "X=1007.453 Y=94.111 Z=0.000",
+        "X=863.972 Y=94.111 Z=0.000",
+        "X=845.458 Y=94.111 Z=0.000",
+        "X=476.727 Y=94.111 Z=0.000",
+        "X=476.727 Y=286.962 Z=0.000",
+        "X=347.131 Y=286.962 Z=0.000",
+        "X=347.131 Y=499.869 Z=0.000",
+        "X=478.270 Y=499.869 Z=0.000",
+        "X=478.270 Y=981.225 Z=0.000",
+        "X=478.270 Y=999.739 Z=0.000",
+        "X=478.270 Y=1184.875 Z=0.000",
+        "X=862.429 Y=1184.875 Z=0.000",
+        "X=862.429 Y=999.739 Z=0.000",
+        "X=863.972 Y=999.739 Z=0.000",
+        "X=863.972 Y=996.653 Z=0.000",
+        "X=1157.105 Y=996.653 Z=0.000",
+        "X=1186.418 Y=996.653 Z=0.000",
+        "X=1504.236 Y=996.653 Z=0.000",
+        "X=1504.236 Y=595.523 Z=0.000",
+        "X=1331.442 Y=595.523 Z=0.000",
+        "X=1331.442 Y=507.583 Z=0.000",
+        "X=1332.985 Y=507.583 Z=0.000",
+        "X=1332.985 Y=265.363 Z=0.000",
+        "X=1332.985 Y=246.849 Z=0.000",
+        "X=1332.985 Y=94.111 Z=0.000"
+    ],
+    "yDList": [],
+    "baseInfo": {
+        "inside_area": 83.57672882080078
+    },
+    "lightParams": {},
+    "lightInfos": []
+}
