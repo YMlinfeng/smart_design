@@ -216,7 +216,7 @@ def main() -> None:
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
-            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Master")): #todo
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Second")): #todo
                 print(f"跳过处理 {room_en_name}")
                 continue
 
@@ -242,7 +242,7 @@ def main() -> None:
 
                 # —— 解析返回值 —— #
                 try:
-                    parsed = safe_literal_eval(parsed.replace("`", "").replace("json", "").strip())
+                    parsed = safe_literal_eval(content.replace("`", "").replace("json", "").strip())
                     room_data["modelInfos"] = parsed
                 except Exception as e:
                     print(f"[ParseError] {e}，原样保留字符串。")
@@ -276,5 +276,5 @@ def main() -> None:
 # ===============================================================
 if __name__ == "__main__":
     main()
-    convert_model_infos("/root/autodl-tmp/smart_design/results")
+    # process_modelinfos_folder("/root/autodl-tmp/smart_design/results")
     print("Done")
