@@ -159,16 +159,19 @@
              '            \n'
              '现在，需要你处理的房间json如下：\n'
              '\n'
-             "{'name': '次卧2', 'englishName': 'SecondBedroom2', 'points': "
-             "['X=1290.612 Y=250.905 Z=0.000', 'X=1575.887 Y=250.905 Z=0.000', "
-             "'X=1575.887 Y=575.706 Z=0.000', 'X=1395.442 Y=575.706 Z=0.000', "
-             "'X=1395.442 Y=616.951 Z=0.000', 'X=1290.612 Y=616.951 Z=0.000'], "
-             "'rectangles': [], 'windowList': [{'windowType': '', "
-             "'heightToFloor': 90, 'length': 185, 'width': 24.05999755859375, "
-             "'height': 150, 'pos': 'X=1424.657 Y=250.905 Z=90.000', "
-             "'direction': 'X=1.000 Y=0.000 Z=0.000'}], 'doorList': "
-             "[{'heightToFloor': 0, 'length': 84, 'width': 22.34002685546875, "
-             "'height': 220, 'pos': 'X=1343.027 Y=616.951 Z=0.000', "
-             "'direction': 'X=-1.000 Y=0.000 Z=0.000'}], 'modelInfos': [], "
-             "'views': [], 'area': 9.699999809265137}",
+             "{'name': '主卧', 'englishName': 'MasterBedroom', 'points': "
+             "['X=1228.745 Y=783.647 Z=0.000', 'X=1393.724 Y=783.647 Z=0.000', "
+             "'X=1393.724 Y=890.196 Z=0.000', 'X=1575.887 Y=890.196 Z=0.000', "
+             "'X=1575.887 Y=1221.871 Z=0.000', 'X=1228.745 Y=1221.871 "
+             "Z=0.000'], 'rectangles': [], 'windowList': [{'windowType': '', "
+             "'heightToFloor': 45, 'length': 328.23828125, 'width': "
+             "22.341064453125, 'height': 195, 'pos': 'X=1408.331 Y=1221.871 "
+             "Z=45.000', 'direction': 'X=-1.000 Y=0.000 Z=0.000'}], "
+             "'doorList': [{'heightToFloor': 0, 'length': 79, 'width': "
+             "18.9029541015625, 'height': 220, 'pos': 'X=1331.763 Y=783.647 "
+             "Z=0.000', 'direction': 'X=1.000 Y=0.000 Z=0.000'}, "
+             "{'heightToFloor': 0, 'length': 59, 'width': 34.3699951171875, "
+             "'height': 220, 'pos': 'X=1393.724 Y=822.619 Z=0.000', "
+             "'direction': 'X=0.000 Y=1.000 Z=0.000'}], 'modelInfos': [], "
+             "'views': [], 'area': 13.270000457763672}",
   'role': 'user'}]

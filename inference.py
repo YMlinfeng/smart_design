@@ -210,14 +210,15 @@ def main() -> None:
             sub_datas = del_key(sub_datas, k)
         sub_datas = transform_data(sub_datas) # roomList字段:{'roomList': [{...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}, {...}]}
 
-        new_room_list: List[Dict[str, Any]] = []
+        new_room_list = []
 
         # —— 遍历每个房间，独立生成 —— #
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
             
             if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Second")): #todo
-                print(f"跳过处理 {room_en_name}")
+                print(f"不处理 {room_en_name}")
+                new_room_list.append(room_data)
                 continue
 
             messages = build_messages(room_data)
