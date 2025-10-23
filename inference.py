@@ -137,8 +137,8 @@ def generate_with_thinking(
         messages,
         tokenize=False,
         add_generation_prompt=True,
-        # enable_thinking=True,  # 默认启用思维模式
-        enable_thinking=False,  # 默认启用思维模式
+        enable_thinking=True,  # 默认启用思维模式
+        # enable_thinking=False,  # 默认启用思维模式
     )
 
     model_inputs = tokenizer.__call__([text], return_tensors="pt").to(model.device) 
@@ -240,8 +240,8 @@ def main() -> None:
                 cost = time.time() - start
                 with open('debug/content.txt', 'w', encoding='utf-8') as f:
                     pprint(content, stream=f)
-                # with open('debug/think.txt', 'w', encoding='utf-8') as f:
-                #     pprint(thinking, stream=f)
+                with open('debug/think.txt', 'w', encoding='utf-8') as f:
+                    pprint(thinking, stream=f)
 
                 # —— 解析返回值 —— #
                 try:
