@@ -215,9 +215,10 @@ def main() -> None:
         # —— 遍历每个房间，独立生成 —— #
         for room_data in tqdm(datas.get("roomList", []), desc=f"Processing {json_id}"):
             room_en_name: str = room_data.get("englishName", "UnknownRoom")
+            room_ch_name: str = room_data.get("name", "未知房间")
             
             # if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","Second")): #todo
-            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom")): #todo
+            if room_en_name.startswith(("LivingRoom", "Study", "Kitchen","Balcony","Cloakroom","Bathroom","EquipmentRoom")) or room_ch_name.startswith(("小房间")): #todo
                 print(f"不处理 {room_en_name}")
                 new_room_list.append(room_data)
                 continue
@@ -265,7 +266,7 @@ def main() -> None:
 
         # 保存结果到 JSON
         datas["roomList"] = new_room_list
-        result_file = RESULT_DIR / f"result_{json_id}.json"
+        result_file = RESULT_DIR / f"{json_id}.json"
         with result_file.open("w", encoding="utf-8") as f:
             json.dump(datas, f, ensure_ascii=False, indent=4)
 
