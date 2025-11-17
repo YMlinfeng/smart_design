@@ -1,0 +1,2 @@
+先配置环境:pip install -r requirement.txt 安装相关依赖包
+运行项目命令:gunicorn -w 10 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:7754 --timeout 120 app.main:app(不是守护进程的方式,在agent目录下运行)
