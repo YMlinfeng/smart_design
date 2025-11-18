@@ -122,7 +122,7 @@ class AIGenerateRequest(BaseModel):
         min_items=1
     )
     size: str = Field(
-        default="2K",
+        default="2K", # or "size": "2048x2048"
         description="图片尺寸，默认2K"
     )
     max_images: int = Field(
