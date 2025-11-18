@@ -38,73 +38,117 @@ logger = logging.getLogger(__name__)
 # 不改变图片中的任何原有细节（颜色，空间位置等）"
 # 上传接口地址
 UPLOAD_URL = "http://dev.api.jiazhuangwuyou.com/api/upload/file"
-PROMPT = "请为我严格按照语义分割图中的语义分割结果和主要家具图（如有）中的家具信息，\
-在不改变原家装效果图任何一种家具的材质颜色和位置，也不改变原图空间结构的情况下，\
-输出效果需符合真实摄影的物理光照规律，光线自然、均匀、干净；亮部不过曝、暗部保留细节；\
-提升全局照度，让室内光线柔和，不偏灰或泛白；\
-增强自然光方向性（窗外光柔和进入室内），并保留原场景光源特征；\
-强化全局光照反射，让空间更通透；\
-增强微小细节的真实感（边缘锐度、水纹、缝隙、结构线条）；\
-优化色彩：白平衡偏自然日光色温，色调清爽干净；\
-去除任何噪点、伪影、拉伸、变形或 AI 重绘痕迹；\
-整体呈现专业设计摄影棚级别的真实成片效果，视觉质量达到商业级家装摄影标准。\
-不改变图片中的任何原有细节（颜色，空间位置等）"
+PROMPT = """
+
+You are given:
+  1. The original interior‐design image.
+  2. A pixel-accurate semantic-segmentation map.
+  3. (Optional) Furniture-only images.
+
+TASK  
+Enhance the image so it looks like a commercial-grade, studio-quality interior photograph while *strictly* preserving every object’s material, color, position, and the room’s geometry.
+
+MANDATORY CONSTRAINTS  
+• Never modify—even slightly—the material, color, scale, orientation, or placement of any furniture or architectural element.  
+• If an enhancement would violate the above, skip that enhancement and leave the affected pixels unchanged.
+
+DESIRED IMPROVEMENTS  
+1. Lighting  
+   – Obey real-world optics: natural, even, and clean illumination.  
+   – No blown highlights; retain shadow detail.  
+   – If needed, raise global exposure for a soft, balanced look (no gray or milkiness).  
+   – Subtly emphasize the directionality of daylight from windows while keeping existing artificial-light characteristics.  
+   – Strengthen global light bounce to give the space an airy, open feel.
+
+2. Micro-detail realism  
+   – Refine edge sharpness, water ripples, seams, and structural lines already present.  
+   – Remove noise, banding, stretching, warping, or any AI repaint artifacts.
+
+3. Color fidelity  
+   – Apply a neutral daylight white balance; keep tones fresh and clean.  
+   – Absolutely no hue or saturation shift on furniture, finishes, or fixed elements.
+
+OUTPUT  
+Return only the enhanced image (no text, borders, or metadata changes).
+
+PRIORITY  
+Image integrity first, beautification second. If you cannot enhance without breaking the rules, output the original image unchanged.
+
+"""
 
 
-PROMPT = """保持原图的镜头、构图、透视、空间结构完全不变，不重新布局，不新增或删除任何物体。
-进行强增强处理，使画质有质的飞跃：
 
-【光线】
+# PROMPT = "请为我严格按照语义分割图中的语义分割结果和主要家具图（如有）中的家具信息，\
+# 在不改变原家装效果图任何一种家具的材质颜色和位置，也不改变原图空间结构的情况下，\
+# 对我的原始家装图进行视觉效果的润色，使整体呈现更加自然。 \
+# 输出效果需符合真实摄影的物理光照规律，光线自然、均匀、干净；亮部不过曝、暗部保留细节；\
+# 必要时提升全局照度，让室内光线柔和，不偏灰或泛白；\
+# 增强自然光方向性（窗外光柔和进入室内），并保留原场景光源特征；\
+# 强化全局光照反射，让空间更通透；\
+# 增强微小细节的真实感（边缘锐度、水纹、缝隙、结构线条）；\
+# 优化色彩：白平衡偏自然日光色温，色调清爽干净；\
+# 去除任何噪点、伪影、拉伸、变形或 AI 重绘痕迹；\
+# 整体呈现专业设计摄影棚级别的真实成片效果，视觉质量达到商业级家装摄影标准。\
+# 最后一定注意：这些改动都要以不改变图片中的任何家具材质细节为前提。  \
+# 如果你的任何美化可能涉及到改变原图家具材质颜色或者空间位置，那么请放弃这个美化  \
+# 保留原图不变第一，进行美化第二！\
+# "
 
-增强自然光与环境光，让亮度更均匀通透，整体明亮但不过曝。
-增强全局光反射，让空间更立体、有空气感。
-阴影更柔顺自然，亮部细节保留、暗部更干净。
 
-【材质】
+# PROMPT = """保持原图的镜头、构图、透视、空间结构完全不变，不重新布局，不新增或删除任何物体。
+# 进行强增强处理，使画质有质的飞跃：
 
-强化材质真实度达到照片级：
+# 【光线】
 
-木纹 → 清晰、细腻、有真实粗糙度
+# 增强自然光与环境光，让亮度更均匀通透，整体明亮但不过曝。
+# 增强全局光反射，让空间更立体、有空气感。
+# 阴影更柔顺自然，亮部细节保留、暗部更干净。
 
-石材 → 明显纹理、真实微凹凸
+# 【材质】
 
-布料 → 有织物纤维感
+# 强化材质真实度达到照片级：
 
-金属 → 反射准确、清晰高光
+# 木纹 → 清晰、细腻、有真实粗糙度
 
-纱帘 → 提升折射率、透光率、微表面散射效果，使透明度、模糊度与光衍射更真实；高光更准确、边缘更干净；呈现真实摄影中半透明物体的厚度感、层次感与光线穿透感。
+# 石材 → 明显纹理、真实微凹凸
 
-大幅提升反射/粗糙度细节，使画面更逼真。
+# 布料 → 有织物纤维感
 
-【清晰度】
+# 金属 → 反射准确、清晰高光
 
-提升画面锐度与精细度 30~60%。
-边缘清晰但不产生硬边。
-去除噪点、模糊、AI伪影与瑕疵。
+# 纱帘 → 提升折射率、透光率、微表面散射效果，使透明度、模糊度与光衍射更真实；高光更准确、边缘更干净；呈现真实摄影中半透明物体的厚度感、层次感与光线穿透感。
 
-【色彩】
+# 大幅提升反射/粗糙度细节，使画面更逼真。
 
-白平衡校正为自然日光感。
-色彩干净、纯净、无灰蒙雾感。
-增强对比度与动态范围，使高光、暗部更有层次。
+# 【清晰度】
 
-【整体效果】
+# 提升画面锐度与精细度 30~60%。
+# 边缘清晰但不产生硬边。
+# 去除噪点、模糊、AI伪影与瑕疵。
 
-输出结果需达到 真实摄影棚级别的室内实拍照片：
+# 【色彩】
 
-光线自然
+# 白平衡校正为自然日光感。
+# 色彩干净、纯净、无灰蒙雾感。
+# 增强对比度与动态范围，使高光、暗部更有层次。
 
-色彩真实
+# 【整体效果】
 
-材质高级
+# 输出结果需达到 真实摄影棚级别的室内实拍照片：
 
-半透明材质呈现真实光学效果
+# 光线自然
 
-极强的空间通透感
+# 色彩真实
 
-画质明显提升
+# 材质高级
 
-风格基准：真实摄影、3DMAX V-Ray/Corona 级真实感、商业级家装摄影、电影级光线质感。"""
+# 半透明材质呈现真实光学效果
+
+# 极强的空间通透感
+
+# 画质明显提升
+
+# 风格基准：真实摄影、3DMAX V-Ray/Corona 级真实感、商业级家装摄影、电影级光线质感。"""
 
 # 初始化 Ark 客户端
 _client = None
