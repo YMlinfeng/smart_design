@@ -38,43 +38,56 @@ logger = logging.getLogger(__name__)
 # 不改变图片中的任何原有细节（颜色，空间位置等）"
 # 上传接口地址
 UPLOAD_URL = "http://dev.api.jiazhuangwuyou.com/api/upload/file"
+
 PROMPT = """
 
-You are given:
-  1. The original interior‐design image.
-  2. A pixel-accurate semantic-segmentation map.
-  3. (Optional) Furniture-only images.
+分辨率为4K保持原图的镜头、构图、透视、空间结构完全不变，不重新布局，不新增或删除任何物体。 进行强增强处理，使画质有质的飞跃： 
+【光线】 增强自然光与环境光，让亮度更均匀通透，整体明亮但不过曝。 增强全局光反射，让空间更立体、有空气感。 阴影更柔顺自然，亮部细节保留、暗部更干净。 
+【材质】 强化材质真实度达到照片级： 木纹 → 清晰、细腻、有真实粗糙度 石材 → 明显纹理、真实微凹凸 布料 → 有织物纤维感 金属 → 反射准确、清晰高光 纱帘 → 提升折射率、透光率、微表面散射效果，使透明度、模糊度与光衍射更真实；高光更准确、边缘更干净；呈现真实摄影中半透明物体的厚度感、层次感与光线穿透感。 大幅提升反射/粗糙度细节，使画面更逼真。 
+【清晰度】 提升画面锐度与精细度 30~60%。 边缘清晰但不产生硬边。 去除噪点、模糊、AI伪影与瑕疵。 
+【色彩】 白平衡校正为自然日光感。 色彩干净、纯净、无灰蒙雾感。 增强对比度与动态范围，使高光、暗部更有层次。 
+【整体效果】 输出结果需达到 真实摄影棚级别的室内实拍照片： 光线自然 色彩真实 材质高级 半透明材质呈现真实光学效果 极强的空间通透感 画质明显提升 风格基准：真实摄影、3DMAX V-Ray/Corona 级真实感、商业级家装摄影、电影级光线质感
 
-TASK  
-Enhance the image so it looks like a commercial-grade, studio-quality interior photograph while *strictly* preserving every object’s material, color, position, and the room’s geometry.
-
-MANDATORY CONSTRAINTS  
-• Never modify—even slightly—the material, color, scale, orientation, or placement of any furniture or architectural element.  
-• If an enhancement would violate the above, skip that enhancement and leave the affected pixels unchanged.
-
-DESIRED IMPROVEMENTS  
-1. Lighting  
-   – Obey real-world optics: natural, even, and clean illumination.  
-   – No blown highlights; retain shadow detail.  
-   – If needed, raise global exposure for a soft, balanced look (no gray or milkiness).  
-   – Subtly emphasize the directionality of daylight from windows while keeping existing artificial-light characteristics.  
-   – Strengthen global light bounce to give the space an airy, open feel.
-
-2. Micro-detail realism  
-   – Refine edge sharpness, water ripples, seams, and structural lines already present.  
-   – Remove noise, banding, stretching, warping, or any AI repaint artifacts.
-
-3. Color fidelity  
-   – Apply a neutral daylight white balance; keep tones fresh and clean.  
-   – Absolutely no hue or saturation shift on furniture, finishes, or fixed elements.
-
-OUTPUT  
-Return only the enhanced image (no text, borders, or metadata changes).
-
-PRIORITY  
-Image integrity first, beautification second. If you cannot enhance without breaking the rules, output the original image unchanged.
 
 """
+
+# PROMPT = """
+
+# You are given:
+#   1. The original interior‐design image.
+#   2. A pixel-accurate semantic-segmentation map.
+#   3. (Optional) Furniture-only images.
+
+# TASK  
+# Enhance the image so it looks like a commercial-grade, studio-quality interior photograph while *strictly* preserving every object’s material, color, position, and the room’s geometry.
+
+# MANDATORY CONSTRAINTS  
+# • Never modify—even slightly—the material, color, scale, orientation, or placement of any furniture or architectural element.  
+# • If an enhancement would violate the above, skip that enhancement and leave the affected pixels unchanged.
+
+# DESIRED IMPROVEMENTS  
+# 1. Lighting  
+#    – Obey real-world optics: natural, even, and clean illumination.  
+#    – No blown highlights; retain shadow detail.  
+#    – If needed, raise global exposure for a soft, balanced look (no gray or milkiness).  
+#    – Subtly emphasize the directionality of daylight from windows while keeping existing artificial-light characteristics.  
+#    – Strengthen global light bounce to give the space an airy, open feel.
+
+# 2. Micro-detail realism  
+#    – Refine edge sharpness, water ripples, seams, and structural lines already present.  
+#    – Remove noise, banding, stretching, warping, or any AI repaint artifacts.
+
+# 3. Color fidelity  
+#    – Apply a neutral daylight white balance; keep tones fresh and clean.  
+#    – Absolutely no hue or saturation shift on furniture, finishes, or fixed elements.
+
+# OUTPUT  
+# Return only the enhanced image (no text, borders, or metadata changes).
+
+# PRIORITY  
+# Image integrity first, beautification second. If you cannot enhance without breaking the rules, output the original image unchanged.
+
+# """
 
 
 
