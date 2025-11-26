@@ -26,7 +26,7 @@ python inference.py
 ```
 python train.py
 ```
-### 备注：
+### 备注
 1、训练代码中，训练数据集和验证数据集的划分比例是9：1 <br>
 2、本项目基于qwen3-32B构建
 3、已更新Lora微调版本
