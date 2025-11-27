@@ -16,7 +16,7 @@ bash init.sh
 pip install -r requirements.txt
 ```
 
-## 运行推理代码
+## 推理
 ```
 python inference.py
 ```
