@@ -5,7 +5,7 @@ import requests
 from volcenginesdkarkruntime import Ark
 
 # -------------------------- 配置参数（根据你的需求修改）--------------------------
-os.environ['ARK_API_KEY'] = '13435882-85a3-4a62-8655-670ff4242ec8'  # 你的真实API密钥
+os.environ['ARK_API_KEY'] = '13435882-85a3-4a62-8655-670ff4242ec8'  # 你的真实API密钥，注意不要泄漏，该API已失效
 SAVE_FOLDER = "./生成的视频"  # 本地保存路径
 POLL_INTERVAL = 10  # 轮询间隔（教程用10秒，保持一致）
 TIMEOUT = 300  # 超时时间（5分钟）
