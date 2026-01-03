@@ -1,6 +1,6 @@
 {
 	"wallHeight": 270,
-	"centerPos": "X=1307.210 Y=980.407 Z=0.000",
+	"centerPos": "X=1307.212 Y=980.407 Z=0.000",
 	"totalArea": "92.59",
 	"windowList": [
 		{
@@ -602,4 +602,5 @@
 	{
 	},
 	"lightInfos": []
+
 }
