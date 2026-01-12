@@ -5,6 +5,7 @@ from typing import List, Dict
 from app.faiss.qa_embeddings import create_embeddings, DEFAULT_MODEL, DEFAULT_DIMENSION
 import os
 import time
+import torch
 
 class QASearcher:
     """QA向量数据库检索器（带缓存优化）"""
