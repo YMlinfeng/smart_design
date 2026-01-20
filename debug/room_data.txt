@@ -1,4 +1,4 @@
-{'area': 23.489999771118164,
+{'area': 23.48999977118164,
  'doorList': [{'direction': 'X=0.000 Y=1.000 Z=0.000',
                'height': 220,
                'heightToFloor': 0,
