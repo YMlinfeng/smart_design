@@ -16,4 +16,4 @@ gunicorn
 aiofiles
 aio_pika
 volcengine-python-sdk[ark]
-torch
+tqdm
