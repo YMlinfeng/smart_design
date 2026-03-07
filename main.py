@@ -4,6 +4,7 @@ from typing import List
 from volcenginesdkarkruntime import Ark
 from volcenginesdkarkruntime.types.images.images import SequentialImageGenerationOptions
 import os
+import
 
 PROMPT = "请为我严格按照语义分割图中的语义分割结果和主要家具图（如有）中的家具信息，在不改变原家装效果图任何一种家具的材质颜色和位置，也不改变原图空间结构的情况下，改善室内的环境光为明亮且柔和的光效。也即，除了改变室内光线为明亮，柔和光之外，不改变图片中的任何原有细节（颜色，空间位置等）"
 
